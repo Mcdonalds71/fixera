@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Fixera — AI IT Helpdesk Automation</title>
+<meta name="description" content="Fixera uses AI to triage and resolve common IT tickets automatically, and routes the rest to the right technician — so your helpdesk queue stops growing." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Urbanist:wght@600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/styles.css?v=2" />
+<link rel="icon" type="image/png" href="assets/logo-mark.png?v=1">
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="container nav__inner">
+    <a href="index.html" class="brand">
+      <span class="brand__mark"><img src="assets/logo-mark.png?v=1" alt="Fixera logo"></span>
+      Fixera<span class="nav__badge"><i></i>Live</span>
+    </a>
+    <nav class="nav__links" id="navLinks">
+      <a href="#problem">problem</a>
+      <a href="#ai">ai_technology</a>
+      <a href="#features">features</a>
+      <a href="#how">how_it_works</a>
+      <a href="#market">market</a>
+      <a href="#roadmap">roadmap</a>
+      <a href="login.html" class="btn btn--line nav__m-only nav__m-login">Log in</a>
+      <a href="#demo" class="btn btn--sky nav__m-only nav__m-demo">Get started</a>
+    </nav>
+    <div class="nav__cta">
+      <a href="login.html" class="nav__login">Log in</a>
+      <a href="#demo" class="btn btn--sky">Get started</a>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+<div class="nav__scrim" id="navScrim"></div>
+
+<section class="hero">
+  <div class="container hero__inner">
+    <div class="hero__copy reveal">
+      <h1>Most tickets don't need <span class="text-accent">a human. Yet.</span></h1>
+      <p class="hero__sub">Fixera reads incoming IT tickets with AI, resolves the common ones instantly, and routes the rest to the right technician with full context attached.</p>
+      <div class="hero__actions">
+        <a href="#demo" class="btn btn--sky btn--lg">Get started
+          <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="#how" class="btn btn--line btn--lg">See how it works</a>
+      </div>
+      <p class="hero__note">No credit card · Data-protection ready · Built for IT teams</p>
+    </div>
+    <div class="reveal" data-d="2">
+      <div class="chat-window">
+        <div class="chat-window__head"><span>ticket_#8842</span><span>vpn access issue</span></div>
+        <div class="chat-msg chat-msg--user">
+          <div class="chat-msg__av">JD</div>
+          <div class="chat-msg__bubble">My VPN keeps disconnecting every few minutes on the new laptop.</div>
+        </div>
+        <div class="chat-msg chat-msg--ai">
+          <div class="chat-msg__av">FX</div>
+          <div class="chat-msg__bubble">Found it — your VPN client is on an outdated build. I've pushed the update and restarted the service. Try connecting again.</div>
+        </div>
+        <div class="chat-msg__status">✓ Resolved automatically — 42 seconds</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="trust">
+  <p class="trust__label">built_for_teams_drowning_in_tickets</p>
+  <div class="container trust__row">
+    <span class="trust__item">IT teams</span>
+    <span class="trust__item">MSPs</span>
+    <span class="trust__item">Remote-first companies</span>
+    <span class="trust__item">Universities</span>
+    <span class="trust__item">Healthcare IT</span>
+  </div>
+</div>
+
+<section class="section" id="problem">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">the_problem</span>
+      <h2 class="h2">Ticket backlogs grow <span class="text-accent">faster than teams can hire.</span></h2>
+      <p class="lead">Most tickets are password resets, VPN issues, and access requests — repetitive, but still eating a technician's whole day.</p>
+      <div class="stat-chip-row">
+        <div class="stat-chip"><b>62%</b><span>of tickets are repetitive, resolvable issues</span></div>
+        <div class="stat-chip"><b>4.1 hrs</b><span>average time to first response</span></div>
+      </div>
+    </div>
+    <div class="backlog-chart reveal" data-d="2">
+      <div class="backlog-bar"><i style="height:40%"></i><span>Mon</span></div>
+      <div class="backlog-bar"><i style="height:55%"></i><span>Tue</span></div>
+      <div class="backlog-bar"><i style="height:70%"></i><span>Wed</span></div>
+      <div class="backlog-bar"><i style="height:85%"></i><span>Thu</span></div>
+      <div class="backlog-bar"><i style="height:95%"></i><span>Fri</span></div>
+      <div class="backlog-bar"><i style="height:60%"></i><span>Sat</span></div>
+      <div class="backlog-bar"><i style="height:30%"></i><span>Sun</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="solution">
+  <div class="container">
+    <div class="section-head section-head--center reveal">
+      <span class="eyebrow">the_solution</span>
+      <h2 class="h2">One system to <span class="text-accent">triage, resolve, and route</span> — automatically.</h2>
+      <p class="lead" style="margin-inline:auto">Fixera sits on top of your helpdesk and closes the tickets it can, instantly.</p>
+    </div>
+    <div class="stack-v">
+      <div class="stack-v__item reveal" data-d="1"><h3>Triage every ticket</h3><p>AI reads and classifies every incoming ticket the moment it arrives.</p></div>
+      <div class="stack-v__item reveal" data-d="2"><h3>Resolve the common ones</h3><p>Password resets, access requests, and known issues resolved instantly.</p></div>
+      <div class="stack-v__item reveal" data-d="3"><h3>Route the rest</h3><p>Complex tickets routed to the right technician, with context already attached.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="ai">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">ai_technology</span>
+      <h2 class="h2">Resolution is the engine, not a <span class="text-accent">chatbot skin.</span></h2>
+      <p class="lead">Fixera is built around a purpose-trained system for IT ticket classification and resolution.</p>
+    </div>
+    <div class="spec-scroll">
+      <div class="spec-scard reveal" data-d="1"><div class="spec-scard__k">data_in</div><h3>Every signal a ticket carries</h3><p>Ticket text, device logs, prior resolution history, and system status.</p><div class="tag-row"><span class="tag">ticket_text</span><span class="tag">device_logs</span></div></div>
+      <div class="spec-scard reveal" data-d="2"><div class="spec-scard__k">data_out</div><h3>A resolution, or a routed ticket</h3><p>An automated fix, or a classified ticket routed with full context.</p><div class="tag-row"><span class="tag">auto_resolve</span><span class="tag">routing</span></div></div>
+      <div class="spec-scard reveal" data-d="3"><div class="spec-scard__k">techniques</div><h3>Classification &amp; action execution</h3><p>NLP for ticket classification, plus safe, scoped actions like password resets.</p><div class="tag-row"><span class="tag">nlp</span><span class="tag">action_execution</span></div></div>
+      <div class="spec-scard reveal" data-d="4"><div class="spec-scard__k">why_scale</div><h3>Every ticket handled instantly</h3><p>Ticket volume spikes on Mondays and after outages. GPU inference keeps response instant.</p><div class="tag-row"><span class="tag">gpu_inference</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="features">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">product_features</span>
+      <h2 class="h2">Everything a lean IT team needs to stop drowning</h2>
+    </div>
+    <div class="check-cols">
+      <div class="check-row reveal" data-d="1"><svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M9 12l2 2 4-4" stroke="#38BDF8" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><div><h3>Automated Resolution</h3><p>Common tickets resolved instantly, no technician needed.</p></div></div>
+      <div class="check-row reveal" data-d="2"><svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M9 12l2 2 4-4" stroke="#38BDF8" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><div><h3>Smart Routing</h3><p>Complex tickets routed to the right technician automatically.</p></div></div>
+      <div class="check-row reveal" data-d="1"><svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M9 12l2 2 4-4" stroke="#38BDF8" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><div><h3>Knowledge Base Sync</h3><p>Resolutions written back to your knowledge base automatically.</p></div></div>
+      <div class="check-row reveal" data-d="2"><svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M9 12l2 2 4-4" stroke="#38BDF8" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><div><h3>SLA Monitoring</h3><p>Real-time visibility into response and resolution times.</p></div></div>
+      <div class="check-row reveal" data-d="1"><svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M9 12l2 2 4-4" stroke="#38BDF8" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><div><h3>Employee Self-Service</h3><p>A chat interface employees can use directly, any time.</p></div></div>
+      <div class="check-row reveal" data-d="2"><svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M9 12l2 2 4-4" stroke="#38BDF8" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><div><h3>Audit Logging</h3><p>Every automated action logged for security review.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="how">
+  <div class="container">
+    <div class="section-head section-head--center reveal">
+      <span class="eyebrow">how_it_works</span>
+      <h2 class="h2">From ticket to resolution in four steps</h2>
+    </div>
+    <div class="thread-steps">
+      <div class="thread-step reveal" data-d="1"><div class="thread-step__n">01</div><div><h3>Connect your helpdesk</h3><p>Link your existing ticketing tool or use Fixera's inbox.</p></div></div>
+      <div class="thread-step reveal" data-d="2"><div class="thread-step__n">02</div><div><h3>AI triages every ticket</h3><p>Classified and scored the moment it arrives.</p></div></div>
+      <div class="thread-step reveal" data-d="3"><div class="thread-step__n">03</div><div><h3>Common issues resolved</h3><p>Instantly, without a technician touching it.</p></div></div>
+      <div class="thread-step reveal" data-d="4"><div class="thread-step__n">04</div><div><h3>The rest routed with context</h3><p>Complex tickets reach the right technician, already understood.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="tech">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">technology_and_infrastructure</span>
+      <h2 class="h2">A modern, secure <span class="text-accent">tech stack</span> built for IT operations</h2>
+      <p class="lead">Fixera runs on cloud infrastructure for secure storage, API hosting, and AI inference — with GPU-accelerated compute powering ticket resolution in real time.</p>
+    </div>
+    <div class="infra-table">
+      <div class="infra-trow reveal" data-d="1"><b>Cloud infrastructure</b><p>Secure, scalable storage keeps every organization's ticket data isolated and encrypted.</p></div>
+      <div class="infra-trow reveal" data-d="2"><b>GPU-accelerated AI</b><p>Accelerated compute powers classification and resolution in real time.</p></div>
+      <div class="infra-trow reveal" data-d="3"><b>Security &amp; compliance</b><p>Encryption in transit and at rest, with role-based access and scoped automated actions.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="market">
+  <div class="container market-split2">
+    <div class="reveal">
+      <span class="eyebrow">market_opportunity</span>
+      <div class="market-num2">62<span>% of IT tickets are repetitive and resolvable without a human</span></div>
+    </div>
+    <div class="market-rows4 reveal" data-d="2">
+      <div class="market-row5"><b>Target users</b><p>IT teams, MSPs, and remote-first companies handling internal support at scale.</p></div>
+      <div class="market-row5"><b>Launch markets</b><p>Nigeria, Kenya, and South Africa first — expanding to UK and US mid-market IT teams.</p></div>
+      <div class="market-row5"><b>Revenue model</b><p>Per-seat subscription plus a tier for ticket volume.</p></div>
+      <div class="market-row5"><b>Growth plan</b><p>Land through MSP partnerships, expand by employee count and ticket volume.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="traction">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">traction_and_mvp_status</span>
+      <h2 class="h2">Early, but real</h2>
+      <p class="lead">Fixera is live and in active use across a first cohort of organizations. Real, current figures — reported honestly.</p>
+    </div>
+    <div class="badge-row2">
+      <div class="badge-cell2 reveal" data-d="1"><div class="badge-cell2__num"><span class="count" data-to="9">0</span></div><div class="badge-cell2__label">organizations live</div></div>
+      <div class="badge-cell2 reveal" data-d="2"><div class="badge-cell2__num"><span class="count" data-to="12600">0</span>+</div><div class="badge-cell2__label">tickets resolved</div></div>
+      <div class="badge-cell2 reveal" data-d="3"><div class="badge-cell2__num"><span class="count" data-to="58">0</span>%</div><div class="badge-cell2__label">auto-resolved without a human</div></div>
+      <div class="badge-cell2 reveal" data-d="4"><div class="badge-cell2__num">Live</div><div class="badge-cell2__label">MVP in active use</div></div>
+    </div>
+    <p class="banner reveal"><b>Our focus:</b> cut average time-to-resolution by up to 65%.</p>
+  </div>
+</section>
+
+<section class="section" id="roadmap">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">roadmap</span>
+      <h2 class="h2">What we're building next</h2>
+    </div>
+    <div class="quarter-list">
+      <div class="quarter-row reveal" data-d="1"><span class="quarter-row__q">Shipped</span><div><h3>Ticket triage &amp; auto-resolution</h3><p>Live in the MVP, resolving common tickets today.</p></div></div>
+      <div class="quarter-row reveal" data-d="2"><span class="quarter-row__q">Shipped</span><div><h3>Smart routing</h3><p>Complex tickets routed with full context attached.</p></div></div>
+      <div class="quarter-row reveal" data-d="3"><span class="quarter-row__q">Now</span><div><h3>Knowledge base sync</h3><p>Resolutions written back automatically.</p></div></div>
+      <div class="quarter-row reveal" data-d="4"><span class="quarter-row__q">Next</span><div><h3>Employee self-service chat</h3><p>A direct chat interface for employees.</p></div></div>
+      <div class="quarter-row reveal" data-d="1"><span class="quarter-row__q">Planned</span><div><h3>Helpdesk integrations</h3><p>Direct connections to common ticketing tools.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="team">
+  <div class="container">
+    <div class="section-head section-head--center reveal">
+      <span class="eyebrow">team</span>
+      <h2 class="h2">Real people building Fixera</h2>
+      <p class="lead" style="margin-inline:auto">A small team of engineers and IT operations specialists.</p>
+    </div>
+    <div class="team-row6">
+      <div class="member-plain reveal" data-d="1">
+        <div class="member-plain__ph">BE</div>
+        <h3>Blessing Etim</h3>
+        <div class="role">Founder &amp; CEO</div>
+        <p>Leads Fixera's mission to help IT teams stop drowning in repetitive tickets.</p>
+        <div class="member-plain__socials">
+          <a href="#" class="li" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="5" fill="#0A66C2"/><path fill="#fff" d="M7.1 9.3H4.8V19h2.3V9.3zM5.95 5.4a1.35 1.35 0 10-.05 2.7 1.35 1.35 0 00.05-2.7zM19.2 19h-2.3v-4.7c0-1.2-.43-1.98-1.5-1.98-.82 0-1.3.55-1.52 1.08-.08.19-.1.45-.1.72V19h-2.3s.03-8.02 0-8.85h2.3v1.25c.3-.47.85-1.14 2.08-1.14 1.52 0 2.66.99 2.66 3.13V19z"/></svg></a>
+          <a href="#" class="li" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17 3h3l-7 8 8 10h-6l-5-6-5 6H3l7.5-9L3 3h6l4.5 5.5z"/></svg></a>
+          <a href="mailto:blessing@fixera.io" class="li" aria-label="Email"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="1.8"/></svg></a>
+        </div>
+      </div>
+      <div class="member-plain reveal" data-d="2">
+        <div class="member-plain__ph">YD</div>
+        <h3>Yusuf Danjuma</h3>
+        <div class="role">Co-founder &amp; CTO</div>
+        <p>Leads Fixera's classification models, action-execution pipeline, and cloud infrastructure.</p>
+        <div class="member-plain__socials">
+          <a href="mailto:yusuf@fixera.io" class="li" aria-label="Email"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="1.8"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--flush" id="demo">
+  <div class="container">
+    <div class="cta-band2 reveal">
+      <span class="eyebrow">get_started</span>
+      <h2 class="h2" style="margin-top:14px">See Fixera on your own ticket queue in 20 minutes</h2>
+      <p class="lead">Book a walkthrough — no commitment. We'll resolve a sample ticket live.</p>
+      <div class="cta-band2__actions">
+        <a href="signup.html" class="btn btn--sky btn--lg">Get started</a>
+      </div>
+      <p class="cta-band2__note">No credit card · Live product</p>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div>
+        <a href="index.html" class="brand">
+          <span class="brand__mark"><img src="assets/logo-mark.png?v=1" alt="Fixera logo"></span>
+          Fixera
+        </a>
+        <p class="footer__about">AI IT helpdesk automation — most tickets don't need a human.</p>
+      </div>
+      <div class="footer__linkgrid">
+        <div><h4>product</h4><ul><li><a href="#features">Features</a></li><li><a href="#how">How it works</a></li><li><a href="#ai">AI technology</a></li><li><a href="#roadmap">Roadmap</a></li></ul></div>
+        <div><h4>company</h4><ul><li><a href="#team">Team</a></li><li><a href="#market">Market</a></li><li><a href="#demo">Get started</a></li><li><a href="login.html">Log in</a></li></ul></div>
+        <div><h4>legal</h4><ul><li><a href="privacy.html">Privacy policy</a></li><li><a href="terms.html">Terms of use</a></li><li><a href="privacy.html#data">Data protection</a></li><li><a href="#demo">Contact</a></li></ul></div>
+      </div>
+    </div>
+    <p class="footer__disclaimer">Fixera helps teams triage and resolve IT tickets. It does not guarantee resolution of every issue, and automated actions are scoped and logged for your team to review.</p>
+    <div class="footer__bottom">
+      <span>© 2026 fixera labs ltd.</span>
+      <div class="footer__socials">
+        <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="5" fill="#0A66C2"/><path fill="#fff" d="M7.1 9.3H4.8V19h2.3V9.3zM5.95 5.4a1.35 1.35 0 10-.05 2.7 1.35 1.35 0 00.05-2.7zM19.2 19h-2.3v-4.7c0-1.2-.43-1.98-1.5-1.98-.82 0-1.3.55-1.52 1.08-.08.19-.1.45-.1.72V19h-2.3s.03-8.02 0-8.85h2.3v1.25c.3-.47.85-1.14 2.08-1.14 1.52 0 2.66.99 2.66 3.13V19z"/></svg></a>
+        <a href="#" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17 3h3l-7 8 8 10h-6l-5-6-5 6H3l7.5-9L3 3h6l4.5 5.5z"/></svg></a>
+        <a href="#" aria-label="Email"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="1.8"/></svg></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/app.js?v=1"></script>
+</body>
+</html>
