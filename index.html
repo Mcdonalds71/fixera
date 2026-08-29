@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Urbanist:wght@600;700;800&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="assets/styles.css?v=2" />
+<link rel="stylesheet" href="assets/styles.css?v=3" />
 <link rel="icon" type="image/png" href="assets/logo-mark.png?v=1">
 </head>
 <body>
@@ -20,12 +20,12 @@
       Fixera<span class="nav__badge"><i></i>Live</span>
     </a>
     <nav class="nav__links" id="navLinks">
-      <a href="#problem">problem</a>
-      <a href="#ai">ai_technology</a>
-      <a href="#features">features</a>
-      <a href="#how">how_it_works</a>
-      <a href="#market">market</a>
-      <a href="#roadmap">roadmap</a>
+      <a href="#capabilities">Product</a>
+      <a href="#ai">AI Technology</a>
+      <a href="#features">Features</a>
+      <a href="#how">How it works</a>
+      <a href="#market">Market</a>
+      <a href="#roadmap">Roadmap</a>
       <a href="login.html" class="btn btn--line nav__m-only nav__m-login">Log in</a>
       <a href="#demo" class="btn btn--sky nav__m-only nav__m-demo">Get started</a>
     </nav>
@@ -41,6 +41,30 @@
 <div class="nav__scrim" id="navScrim"></div>
 
 <section class="hero">
+  <div class="hero__mosaic" aria-hidden="true">
+    <span class="hm" style="top:8%;left:2%">F</span>
+    <span class="hm" style="top:22%;left:5%">X</span>
+    <span class="hm" style="top:38%;left:1%">{</span>
+    <span class="hm" style="top:55%;left:4%">0</span>
+    <span class="hm" style="top:70%;left:2%">→</span>
+    <span class="hm" style="top:85%;left:6%">1</span>
+    <span class="hm" style="top:12%;left:8%">·</span>
+    <span class="hm" style="top:48%;left:9%">}</span>
+    <span class="hm" style="top:6%;right:3%">A</span>
+    <span class="hm" style="top:20%;right:6%">I</span>
+    <span class="hm" style="top:35%;right:1%">→</span>
+    <span class="hm" style="top:52%;right:5%">T</span>
+    <span class="hm" style="top:68%;right:2%">#</span>
+    <span class="hm" style="top:82%;right:7%">K</span>
+    <span class="hm" style="top:15%;right:9%">·</span>
+    <span class="hm" style="top:42%;right:8%">0</span>
+    <span class="hm" style="top:92%;left:3%">·</span>
+    <span class="hm" style="top:30%;left:7%">R</span>
+    <span class="hm" style="top:76%;right:4%">·</span>
+    <span class="hm" style="top:60%;right:9%">S</span>
+  </div>
+  <div class="hero__glow" aria-hidden="true"></div>
+
   <div class="container hero__inner">
     <div class="hero__copy reveal">
       <h1>Most tickets don't need <span class="text-accent">a human. Yet.</span></h1>
@@ -71,8 +95,12 @@
 </section>
 
 <div class="trust">
-  <p class="trust__label">built_for_teams_drowning_in_tickets</p>
-  <div class="container trust__row">
+  <div class="trust__track">
+    <span class="trust__item">IT teams</span>
+    <span class="trust__item">MSPs</span>
+    <span class="trust__item">Remote-first companies</span>
+    <span class="trust__item">Universities</span>
+    <span class="trust__item">Healthcare IT</span>
     <span class="trust__item">IT teams</span>
     <span class="trust__item">MSPs</span>
     <span class="trust__item">Remote-first companies</span>
@@ -81,40 +109,160 @@
   </div>
 </div>
 
-<section class="section" id="problem">
+<section class="section" id="capabilities">
   <div class="container">
-    <div class="section-head reveal">
+    <div class="section-head section-head--center reveal">
+      <span class="eyebrow">what_you_get</span>
+      <h2 class="h2">Three things every ticket runs through</h2>
+    </div>
+    <div class="cap-grid">
+      <article class="card cap-card reveal" data-d="1">
+        <h3>It triages the queue</h3>
+        <p>Every incoming ticket classified and prioritized the moment it arrives — before a technician sees it.</p>
+        <div class="cap-card__mock">
+          <div class="mk">
+            <div class="mk__row"><span>Today's queue</span><span class="mk__badge">47 open</span></div>
+            <div class="mk__list">
+              <div class="mk__ticket">
+                <span class="mk__dot mk__dot--green"></span>
+                <span class="mk__subj">VPN keeps disconnecting</span>
+                <span class="mk__tag mk__tag--auto">Auto-fix</span>
+              </div>
+              <div class="mk__ticket">
+                <span class="mk__dot mk__dot--green"></span>
+                <span class="mk__subj">Password reset request</span>
+                <span class="mk__tag mk__tag--auto">Auto-fix</span>
+              </div>
+              <div class="mk__ticket">
+                <span class="mk__dot mk__dot--amber"></span>
+                <span class="mk__subj">Server migration error</span>
+                <span class="mk__tag mk__tag--route">Routed</span>
+              </div>
+              <div class="mk__ticket">
+                <span class="mk__dot mk__dot--dim"></span>
+                <span class="mk__subj">New laptop setup</span>
+                <span class="mk__tag mk__tag--wait">Waiting</span>
+              </div>
+            </div>
+            <div class="mk__foot"><b>31</b> auto-resolved today</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card cap-card reveal" data-d="2">
+        <h3>It resolves the common ones</h3>
+        <p>Password resets, VPN issues, access requests — handled instantly, no technician needed.</p>
+        <div class="cap-card__mock">
+          <div class="mk">
+            <div class="mk__row"><span>Ticket #8842</span><span>VPN issue</span></div>
+            <div class="mk__steps">
+              <div class="mk__step"><span class="mk__step-dot"></span>Checked client version</div>
+              <div class="mk__step"><span class="mk__step-dot"></span>Pushed update v4.2.1</div>
+              <div class="mk__step"><span class="mk__step-dot"></span>Restarted VPN service</div>
+            </div>
+            <div class="mk__verdict">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Resolved · 42 seconds
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card cap-card reveal" data-d="3">
+        <h3>It shows the whole picture</h3>
+        <p>SLA performance, queue depth, and resolution rates — live, not in a weekly spreadsheet.</p>
+        <div class="cap-card__mock">
+          <div class="mk">
+            <div class="mk__row"><span>SLA performance</span><span>Live</span></div>
+            <div class="mk__kpis">
+              <div class="mk__kpi"><span class="mk__kpi-val">12<small>min</small></span><span class="mk__kpi-lab">Response time</span></div>
+              <div class="mk__kpi"><span class="mk__kpi-val">94<small>%</small></span><span class="mk__kpi-lab">Resolution rate</span></div>
+              <div class="mk__kpi"><span class="mk__kpi-val">8</span><span class="mk__kpi-lab">Queue depth</span></div>
+            </div>
+            <div class="mk__bar-wrap">
+              <div class="mk__bar-track"><div class="mk__bar-fill"></div></div>
+              <span class="mk__bar-label">97% SLA compliance</span>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section section--dark" id="problem">
+  <div class="container">
+    <div class="section-head section-head--center reveal">
       <span class="eyebrow">the_problem</span>
       <h2 class="h2">Ticket backlogs grow <span class="text-accent">faster than teams can hire.</span></h2>
-      <p class="lead">Most tickets are password resets, VPN issues, and access requests — repetitive, but still eating a technician's whole day.</p>
-      <div class="stat-chip-row">
-        <div class="stat-chip"><b>62%</b><span>of tickets are repetitive, resolvable issues</span></div>
-        <div class="stat-chip"><b>4.1 hrs</b><span>average time to first response</span></div>
-      </div>
+      <p class="lead" style="margin-inline:auto">Most tickets are password resets, VPN issues, and access requests — repetitive, but still eating a technician's whole day.</p>
     </div>
-    <div class="backlog-chart reveal" data-d="2">
-      <div class="backlog-bar"><i style="height:40%"></i><span>Mon</span></div>
-      <div class="backlog-bar"><i style="height:55%"></i><span>Tue</span></div>
-      <div class="backlog-bar"><i style="height:70%"></i><span>Wed</span></div>
-      <div class="backlog-bar"><i style="height:85%"></i><span>Thu</span></div>
-      <div class="backlog-bar"><i style="height:95%"></i><span>Fri</span></div>
-      <div class="backlog-bar"><i style="height:60%"></i><span>Sat</span></div>
-      <div class="backlog-bar"><i style="height:30%"></i><span>Sun</span></div>
+    <div class="pain-grid">
+      <div class="pain-card reveal" data-d="1">
+        <div class="pain-card__ico">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </div>
+        <h3>Endless queue growth</h3>
+        <p>62% of incoming tickets are repetitive and resolvable — but each one still waits for a human to look at it.</p>
+      </div>
+      <div class="pain-card reveal" data-d="2">
+        <div class="pain-card__ico">
+          <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M12 7v5l3 3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>4.1-hour response time</h3>
+        <p>Employees wait half a workday for password resets and VPN fixes that take 30 seconds to execute.</p>
+      </div>
+      <div class="pain-card reveal" data-d="3">
+        <div class="pain-card__ico">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M16 21v-2a4 4 0 00-4-4H6a4 4 0 00-4-4v2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="1.8"/><path d="M22 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </div>
+        <h3>No routing consistency</h3>
+        <p>Complex tickets land on whoever checks the queue first, not the technician with the right expertise.</p>
+      </div>
     </div>
   </div>
 </section>
 
 <section class="section" id="solution">
   <div class="container">
-    <div class="section-head section-head--center reveal">
+    <div class="section-head reveal">
       <span class="eyebrow">the_solution</span>
       <h2 class="h2">One system to <span class="text-accent">triage, resolve, and route</span> — automatically.</h2>
-      <p class="lead" style="margin-inline:auto">Fixera sits on top of your helpdesk and closes the tickets it can, instantly.</p>
+      <p class="lead">Fixera sits on top of your helpdesk and closes the tickets it can, instantly.</p>
     </div>
-    <div class="stack-v">
-      <div class="stack-v__item reveal" data-d="1"><h3>Triage every ticket</h3><p>AI reads and classifies every incoming ticket the moment it arrives.</p></div>
-      <div class="stack-v__item reveal" data-d="2"><h3>Resolve the common ones</h3><p>Password resets, access requests, and known issues resolved instantly.</p></div>
-      <div class="stack-v__item reveal" data-d="3"><h3>Route the rest</h3><p>Complex tickets routed to the right technician, with context already attached.</p></div>
+    <div class="soln-mock reveal" data-d="2">
+      <div class="soln-mock__chrome">
+        <i></i><i></i><i></i><span>fixera — dashboard</span>
+      </div>
+      <div class="soln-mock__body">
+        <div class="soln-mock__sidebar">
+          <div class="soln-mock__nav-item soln-mock__nav-item--active">Queue</div>
+          <div class="soln-mock__nav-item">Resolved</div>
+          <div class="soln-mock__nav-item">Routing</div>
+          <div class="soln-mock__nav-item">Analytics</div>
+          <div class="soln-mock__nav-item">Settings</div>
+        </div>
+        <div class="soln-mock__main">
+          <div class="soln-mock__row soln-mock__row--head">
+            <span>Ticket</span><span>Category</span><span>Status</span><span>Time</span>
+          </div>
+          <div class="soln-mock__row">
+            <span>#8842 VPN disconnecting</span><span>Network</span><span class="sm-resolved">Resolved</span><span>42s</span>
+          </div>
+          <div class="soln-mock__row">
+            <span>#8843 Password reset</span><span>Access</span><span class="sm-resolved">Resolved</span><span>18s</span>
+          </div>
+          <div class="soln-mock__row">
+            <span>#8844 Printer not found</span><span>Hardware</span><span class="sm-progress">Resolving</span><span>—</span>
+          </div>
+          <div class="soln-mock__row">
+            <span>#8845 Server migration</span><span>Infrastructure</span><span class="sm-routed">Routed → YD</span><span>—</span>
+          </div>
+          <div class="soln-mock__row">
+            <span>#8846 Email forwarding</span><span>Access</span><span class="sm-resolved">Resolved</span><span>24s</span>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -126,11 +274,39 @@
       <h2 class="h2">Resolution is the engine, not a <span class="text-accent">chatbot skin.</span></h2>
       <p class="lead">Fixera is built around a purpose-trained system for IT ticket classification and resolution.</p>
     </div>
-    <div class="spec-scroll">
-      <div class="spec-scard reveal" data-d="1"><div class="spec-scard__k">data_in</div><h3>Every signal a ticket carries</h3><p>Ticket text, device logs, prior resolution history, and system status.</p><div class="tag-row"><span class="tag">ticket_text</span><span class="tag">device_logs</span></div></div>
-      <div class="spec-scard reveal" data-d="2"><div class="spec-scard__k">data_out</div><h3>A resolution, or a routed ticket</h3><p>An automated fix, or a classified ticket routed with full context.</p><div class="tag-row"><span class="tag">auto_resolve</span><span class="tag">routing</span></div></div>
-      <div class="spec-scard reveal" data-d="3"><div class="spec-scard__k">techniques</div><h3>Classification &amp; action execution</h3><p>NLP for ticket classification, plus safe, scoped actions like password resets.</p><div class="tag-row"><span class="tag">nlp</span><span class="tag">action_execution</span></div></div>
-      <div class="spec-scard reveal" data-d="4"><div class="spec-scard__k">why_scale</div><h3>Every ticket handled instantly</h3><p>Ticket volume spikes on Mondays and after outages. GPU inference keeps response instant.</p><div class="tag-row"><span class="tag">gpu_inference</span></div></div>
+    <div class="spec-list">
+      <div class="spec-row reveal" data-d="1">
+        <div class="spec-row__k">data_in</div>
+        <div>
+          <h3>Every signal a ticket carries</h3>
+          <p>Ticket text, device logs, prior resolution history, and system status.</p>
+          <div class="tag-row"><span class="tag">ticket_text</span><span class="tag">device_logs</span><span class="tag">history</span></div>
+        </div>
+      </div>
+      <div class="spec-row reveal" data-d="2">
+        <div class="spec-row__k">data_out</div>
+        <div>
+          <h3>A resolution, or a routed ticket</h3>
+          <p>An automated fix, or a classified ticket routed with full context.</p>
+          <div class="tag-row"><span class="tag">auto_resolve</span><span class="tag">smart_routing</span></div>
+        </div>
+      </div>
+      <div class="spec-row reveal" data-d="3">
+        <div class="spec-row__k">techniques</div>
+        <div>
+          <h3>Classification &amp; action execution</h3>
+          <p>NLP for ticket classification, plus safe, scoped actions like password resets and service restarts.</p>
+          <div class="tag-row"><span class="tag">nlp</span><span class="tag">action_execution</span></div>
+        </div>
+      </div>
+      <div class="spec-row reveal" data-d="4">
+        <div class="spec-row__k">why_scale</div>
+        <div>
+          <h3>Every ticket handled instantly</h3>
+          <p>Volume spikes on Mondays and after outages. GPU inference keeps response instant regardless of queue size.</p>
+          <div class="tag-row"><span class="tag">gpu_inference</span></div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -141,13 +317,37 @@
       <span class="eyebrow">product_features</span>
       <h2 class="h2">Everything a lean IT team needs to stop drowning</h2>
     </div>
-    <div class="check-cols">
-      <div class="check-row reveal" data-d="1"><svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M9 12l2 2 4-4" stroke="#38BDF8" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><div><h3>Automated Resolution</h3><p>Common tickets resolved instantly, no technician needed.</p></div></div>
-      <div class="check-row reveal" data-d="2"><svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M9 12l2 2 4-4" stroke="#38BDF8" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><div><h3>Smart Routing</h3><p>Complex tickets routed to the right technician automatically.</p></div></div>
-      <div class="check-row reveal" data-d="1"><svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M9 12l2 2 4-4" stroke="#38BDF8" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><div><h3>Knowledge Base Sync</h3><p>Resolutions written back to your knowledge base automatically.</p></div></div>
-      <div class="check-row reveal" data-d="2"><svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M9 12l2 2 4-4" stroke="#38BDF8" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><div><h3>SLA Monitoring</h3><p>Real-time visibility into response and resolution times.</p></div></div>
-      <div class="check-row reveal" data-d="1"><svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M9 12l2 2 4-4" stroke="#38BDF8" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><div><h3>Employee Self-Service</h3><p>A chat interface employees can use directly, any time.</p></div></div>
-      <div class="check-row reveal" data-d="2"><svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M9 12l2 2 4-4" stroke="#38BDF8" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><div><h3>Audit Logging</h3><p>Every automated action logged for security review.</p></div></div>
+    <div class="feat-grid">
+      <div class="feat-card reveal" data-d="1">
+        <div class="feat-card__ico"><svg viewBox="0 0 24 24" width="20" height="20" fill="none"><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><rect x="3" y="3" width="18" height="18" rx="4" stroke="currentColor" stroke-width="1.8"/></svg></div>
+        <h3>Automated resolution</h3>
+        <p>Common tickets resolved instantly, no technician needed.</p>
+      </div>
+      <div class="feat-card reveal" data-d="2">
+        <div class="feat-card__ico"><svg viewBox="0 0 24 24" width="20" height="20" fill="none"><path d="M16 3h5v5M14 10l7-7M8 21H3v-5M10 14l-7 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3>Smart routing</h3>
+        <p>Complex tickets routed to the right technician automatically.</p>
+      </div>
+      <div class="feat-card reveal" data-d="3">
+        <div class="feat-card__ico"><svg viewBox="0 0 24 24" width="20" height="20" fill="none"><path d="M4 19.5A2.5 2.5 0 016.5 17H20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z" stroke="currentColor" stroke-width="1.8"/></svg></div>
+        <h3>Knowledge base sync</h3>
+        <p>Resolutions written back to your knowledge base automatically.</p>
+      </div>
+      <div class="feat-card reveal" data-d="1">
+        <div class="feat-card__ico"><svg viewBox="0 0 24 24" width="20" height="20" fill="none"><path d="M12 9v4l3 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/></svg></div>
+        <h3>SLA monitoring</h3>
+        <p>Real-time visibility into response and resolution times.</p>
+      </div>
+      <div class="feat-card reveal" data-d="2">
+        <div class="feat-card__ico"><svg viewBox="0 0 24 24" width="20" height="20" fill="none"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" stroke="currentColor" stroke-width="1.8"/></svg></div>
+        <h3>Employee self-service</h3>
+        <p>A chat interface employees can use directly, any time.</p>
+      </div>
+      <div class="feat-card reveal" data-d="3">
+        <div class="feat-card__ico"><svg viewBox="0 0 24 24" width="20" height="20" fill="none"><rect x="3" y="11" width="18" height="11" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M7 11V7a5 5 0 0110 0v4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+        <h3>Audit logging</h3>
+        <p>Every automated action logged for security review.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -158,11 +358,27 @@
       <span class="eyebrow">how_it_works</span>
       <h2 class="h2">From ticket to resolution in four steps</h2>
     </div>
-    <div class="thread-steps">
-      <div class="thread-step reveal" data-d="1"><div class="thread-step__n">01</div><div><h3>Connect your helpdesk</h3><p>Link your existing ticketing tool or use Fixera's inbox.</p></div></div>
-      <div class="thread-step reveal" data-d="2"><div class="thread-step__n">02</div><div><h3>AI triages every ticket</h3><p>Classified and scored the moment it arrives.</p></div></div>
-      <div class="thread-step reveal" data-d="3"><div class="thread-step__n">03</div><div><h3>Common issues resolved</h3><p>Instantly, without a technician touching it.</p></div></div>
-      <div class="thread-step reveal" data-d="4"><div class="thread-step__n">04</div><div><h3>The rest routed with context</h3><p>Complex tickets reach the right technician, already understood.</p></div></div>
+    <div class="steps-flow">
+      <div class="step-node reveal" data-d="1">
+        <div class="step-node__n">01</div>
+        <h3>Connect your helpdesk</h3>
+        <p>Link your existing ticketing tool or use Fixera's inbox.</p>
+      </div>
+      <div class="step-node reveal" data-d="2">
+        <div class="step-node__n">02</div>
+        <h3>AI triages every ticket</h3>
+        <p>Classified and scored the moment it arrives.</p>
+      </div>
+      <div class="step-node reveal" data-d="3">
+        <div class="step-node__n">03</div>
+        <h3>Common issues resolved</h3>
+        <p>Instantly, without a technician touching it.</p>
+      </div>
+      <div class="step-node reveal" data-d="4">
+        <div class="step-node__n">04</div>
+        <h3>The rest routed with context</h3>
+        <p>Complex tickets reach the right technician, already understood.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -183,16 +399,16 @@
 </section>
 
 <section class="section" id="market">
-  <div class="container market-split2">
+  <div class="container market-split">
     <div class="reveal">
       <span class="eyebrow">market_opportunity</span>
-      <div class="market-num2">62<span>% of IT tickets are repetitive and resolvable without a human</span></div>
+      <div class="market-num">62<span>% of IT tickets are repetitive and resolvable without a human</span></div>
     </div>
-    <div class="market-rows4 reveal" data-d="2">
-      <div class="market-row5"><b>Target users</b><p>IT teams, MSPs, and remote-first companies handling internal support at scale.</p></div>
-      <div class="market-row5"><b>Launch markets</b><p>Nigeria, Kenya, and South Africa first — expanding to UK and US mid-market IT teams.</p></div>
-      <div class="market-row5"><b>Revenue model</b><p>Per-seat subscription plus a tier for ticket volume.</p></div>
-      <div class="market-row5"><b>Growth plan</b><p>Land through MSP partnerships, expand by employee count and ticket volume.</p></div>
+    <div class="market-rows reveal" data-d="2">
+      <div class="market-row"><b>Target users</b><p>IT teams, MSPs, and remote-first companies handling internal support at scale.</p></div>
+      <div class="market-row"><b>Launch markets</b><p>Nigeria, Kenya, and South Africa first — expanding to UK and US mid-market IT teams.</p></div>
+      <div class="market-row"><b>Revenue model</b><p>Per-seat subscription plus a tier for ticket volume.</p></div>
+      <div class="market-row"><b>Growth plan</b><p>Land through MSP partnerships, expand by employee count and ticket volume.</p></div>
     </div>
   </div>
 </section>
@@ -200,17 +416,17 @@
 <section class="section" id="traction">
   <div class="container">
     <div class="section-head reveal">
-      <span class="eyebrow">traction_and_mvp_status</span>
+      <span class="eyebrow">traction</span>
       <h2 class="h2">Early, but real</h2>
-      <p class="lead">Fixera is live and in active use across a first cohort of organizations. Real, current figures — reported honestly.</p>
+      <p class="lead">Fixera is live and in active use. Real, current figures — reported honestly.</p>
     </div>
-    <div class="badge-row2">
-      <div class="badge-cell2 reveal" data-d="1"><div class="badge-cell2__num"><span class="count" data-to="9">0</span></div><div class="badge-cell2__label">organizations live</div></div>
-      <div class="badge-cell2 reveal" data-d="2"><div class="badge-cell2__num"><span class="count" data-to="12600">0</span>+</div><div class="badge-cell2__label">tickets resolved</div></div>
-      <div class="badge-cell2 reveal" data-d="3"><div class="badge-cell2__num"><span class="count" data-to="58">0</span>%</div><div class="badge-cell2__label">auto-resolved without a human</div></div>
-      <div class="badge-cell2 reveal" data-d="4"><div class="badge-cell2__num">Live</div><div class="badge-cell2__label">MVP in active use</div></div>
+    <div class="stat-band">
+      <div class="stat-cell reveal" data-d="1"><div class="stat-cell__num"><span class="count" data-to="9">0</span></div><div class="stat-cell__label">organizations live</div></div>
+      <div class="stat-cell reveal" data-d="2"><div class="stat-cell__num"><span class="count" data-to="12600">0</span>+</div><div class="stat-cell__label">tickets resolved</div></div>
+      <div class="stat-cell reveal" data-d="3"><div class="stat-cell__num"><span class="count" data-to="58">0</span>%</div><div class="stat-cell__label">auto-resolved without a human</div></div>
+      <div class="stat-cell reveal" data-d="4"><div class="stat-cell__num">Live</div><div class="stat-cell__label">product in active use</div></div>
     </div>
-    <p class="banner reveal"><b>Our focus:</b> cut average time-to-resolution by up to 65%.</p>
+    <p class="banner reveal"><b>Current focus:</b> cut average time-to-resolution by up to 65%.</p>
   </div>
 </section>
 
@@ -220,12 +436,12 @@
       <span class="eyebrow">roadmap</span>
       <h2 class="h2">What we're building next</h2>
     </div>
-    <div class="quarter-list">
-      <div class="quarter-row reveal" data-d="1"><span class="quarter-row__q">Shipped</span><div><h3>Ticket triage &amp; auto-resolution</h3><p>Live in the MVP, resolving common tickets today.</p></div></div>
-      <div class="quarter-row reveal" data-d="2"><span class="quarter-row__q">Shipped</span><div><h3>Smart routing</h3><p>Complex tickets routed with full context attached.</p></div></div>
-      <div class="quarter-row reveal" data-d="3"><span class="quarter-row__q">Now</span><div><h3>Knowledge base sync</h3><p>Resolutions written back automatically.</p></div></div>
-      <div class="quarter-row reveal" data-d="4"><span class="quarter-row__q">Next</span><div><h3>Employee self-service chat</h3><p>A direct chat interface for employees.</p></div></div>
-      <div class="quarter-row reveal" data-d="1"><span class="quarter-row__q">Planned</span><div><h3>Helpdesk integrations</h3><p>Direct connections to common ticketing tools.</p></div></div>
+    <div class="timeline">
+      <div class="tl-row reveal" data-d="1"><span class="tl-row__q tl-row__q--done">Shipped</span><div><h3>Ticket triage &amp; auto-resolution</h3><p>Live — resolving common tickets today.</p></div></div>
+      <div class="tl-row reveal" data-d="2"><span class="tl-row__q tl-row__q--done">Shipped</span><div><h3>Smart routing</h3><p>Complex tickets routed with full context attached.</p></div></div>
+      <div class="tl-row reveal" data-d="3"><span class="tl-row__q tl-row__q--now">Now</span><div><h3>Knowledge base sync</h3><p>Resolutions written back automatically.</p></div></div>
+      <div class="tl-row reveal" data-d="4"><span class="tl-row__q">Next</span><div><h3>Employee self-service chat</h3><p>A direct chat interface for employees.</p></div></div>
+      <div class="tl-row reveal" data-d="1"><span class="tl-row__q">Planned</span><div><h3>Helpdesk integrations</h3><p>Direct connections to common ticketing tools.</p></div></div>
     </div>
   </div>
 </section>
@@ -237,24 +453,24 @@
       <h2 class="h2">Real people building Fixera</h2>
       <p class="lead" style="margin-inline:auto">A small team of engineers and IT operations specialists.</p>
     </div>
-    <div class="team-row6">
-      <div class="member-plain reveal" data-d="1">
-        <div class="member-plain__ph">BE</div>
+    <div class="team-row">
+      <div class="member reveal" data-d="1">
+        <div class="member__ph">BE</div>
         <h3>Blessing Etim</h3>
         <div class="role">Founder &amp; CEO</div>
         <p>Leads Fixera's mission to help IT teams stop drowning in repetitive tickets.</p>
-        <div class="member-plain__socials">
+        <div class="member__socials">
           <a href="#" class="li" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="5" fill="#0A66C2"/><path fill="#fff" d="M7.1 9.3H4.8V19h2.3V9.3zM5.95 5.4a1.35 1.35 0 10-.05 2.7 1.35 1.35 0 00.05-2.7zM19.2 19h-2.3v-4.7c0-1.2-.43-1.98-1.5-1.98-.82 0-1.3.55-1.52 1.08-.08.19-.1.45-.1.72V19h-2.3s.03-8.02 0-8.85h2.3v1.25c.3-.47.85-1.14 2.08-1.14 1.52 0 2.66.99 2.66 3.13V19z"/></svg></a>
           <a href="#" class="li" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17 3h3l-7 8 8 10h-6l-5-6-5 6H3l7.5-9L3 3h6l4.5 5.5z"/></svg></a>
           <a href="mailto:blessing@fixera.io" class="li" aria-label="Email"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="1.8"/></svg></a>
         </div>
       </div>
-      <div class="member-plain reveal" data-d="2">
-        <div class="member-plain__ph">YD</div>
+      <div class="member reveal" data-d="2">
+        <div class="member__ph">YD</div>
         <h3>Yusuf Danjuma</h3>
         <div class="role">Co-founder &amp; CTO</div>
         <p>Leads Fixera's classification models, action-execution pipeline, and cloud infrastructure.</p>
-        <div class="member-plain__socials">
+        <div class="member__socials">
           <a href="mailto:yusuf@fixera.io" class="li" aria-label="Email"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="1.8"/></svg></a>
         </div>
       </div>
@@ -264,14 +480,16 @@
 
 <section class="section section--flush" id="demo">
   <div class="container">
-    <div class="cta-band2 reveal">
+    <div class="cta-band reveal">
+      <div class="cta-band__glow" aria-hidden="true"></div>
       <span class="eyebrow">get_started</span>
       <h2 class="h2" style="margin-top:14px">See Fixera on your own ticket queue in 20 minutes</h2>
-      <p class="lead">Book a walkthrough — no commitment. We'll resolve a sample ticket live.</p>
-      <div class="cta-band2__actions">
-        <a href="signup.html" class="btn btn--sky btn--lg">Get started</a>
-      </div>
-      <p class="cta-band2__note">No credit card · Live product</p>
+      <p class="lead" style="margin-inline:auto">Book a walkthrough — no commitment. We'll resolve a sample ticket live.</p>
+      <form class="cta-band__form" id="demoForm" novalidate>
+        <input id="email" type="email" placeholder="you@company.com" required />
+        <button type="submit" class="btn btn--sky">Get started</button>
+      </form>
+      <p class="cta-band__note">No credit card · Live product</p>
     </div>
   </div>
 </section>
@@ -294,7 +512,7 @@
     </div>
     <p class="footer__disclaimer">Fixera helps teams triage and resolve IT tickets. It does not guarantee resolution of every issue, and automated actions are scoped and logged for your team to review.</p>
     <div class="footer__bottom">
-      <span>© 2026 fixera labs ltd.</span>
+      <span>&copy; 2026 fixera labs ltd.</span>
       <div class="footer__socials">
         <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="5" fill="#0A66C2"/><path fill="#fff" d="M7.1 9.3H4.8V19h2.3V9.3zM5.95 5.4a1.35 1.35 0 10-.05 2.7 1.35 1.35 0 00.05-2.7zM19.2 19h-2.3v-4.7c0-1.2-.43-1.98-1.5-1.98-.82 0-1.3.55-1.52 1.08-.08.19-.1.45-.1.72V19h-2.3s.03-8.02 0-8.85h2.3v1.25c.3-.47.85-1.14 2.08-1.14 1.52 0 2.66.99 2.66 3.13V19z"/></svg></a>
         <a href="#" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17 3h3l-7 8 8 10h-6l-5-6-5 6H3l7.5-9L3 3h6l4.5 5.5z"/></svg></a>
@@ -304,6 +522,6 @@
   </div>
 </footer>
 
-<script src="assets/app.js?v=1"></script>
+<script src="assets/app.js?v=2"></script>
 </body>
 </html>

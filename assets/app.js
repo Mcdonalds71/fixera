@@ -39,7 +39,7 @@
     });
   }
 
-  var revealSel = ".reveal, .section h2, .stack-v__item, .spec-scard, .check-row, .thread-step, .infra-trow, .badge-cell2, .quarter-row, .member-plain, .backlog-bar";
+  var revealSel = ".reveal, .cap-card, .pain-card, .feat-card, .step-node, .spec-row, .infra-trow, .stat-cell, .tl-row, .member, .soln-mock";
   var revealEls = document.querySelectorAll(revealSel);
   revealEls.forEach(function (el) { el.classList.add("reveal"); });
   if ("IntersectionObserver" in window) {
