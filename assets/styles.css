@@ -349,3 +349,66 @@ body:not(.js) .reveal{opacity:1;transform:none}
   .soln-mock__row span:nth-child(3),.soln-mock__row span:nth-child(4){display:none}
   .soln-mock__row--head span:nth-child(3),.soln-mock__row--head span:nth-child(4){display:none}
 }
+
+/* ---- Nav badge (live status on brand) ---- */
+.nav__badge {
+  display: inline-flex; align-items: center; gap: 4px;
+  font-family: var(--font-mono); font-size: .62rem; font-weight: 500;
+  color: var(--sky-400); margin-left: 8px; vertical-align: middle;
+  letter-spacing: .02em;
+}
+.nav__badge i {
+  width: 5px; height: 5px; border-radius: 50%;
+  background: var(--sky-400);
+  animation: livePulse 2s ease infinite;
+}
+@keyframes livePulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: .3; }
+}
+
+/* ---- Mockup card scroll animations ---- */
+.js .mk__row {
+  opacity: 0; transform: translateX(-8px);
+}
+.js .cap-card.in .mk__row {
+  animation: mkRowIn .38s cubic-bezier(.4,0,.2,1) both;
+}
+.js .cap-card.in .mk__row:nth-child(1) { animation-delay: .06s; }
+.js .cap-card.in .mk__row:nth-child(2) { animation-delay: .14s; }
+.js .cap-card.in .mk__row:nth-child(3) { animation-delay: .22s; }
+.js .cap-card.in .mk__row:nth-child(4) { animation-delay: .30s; }
+.js .cap-card.in .mk__row:nth-child(5) { animation-delay: .38s; }
+@keyframes mkRowIn {
+  from { opacity: 0; transform: translateX(-8px); }
+  to   { opacity: 1; transform: none; }
+}
+
+.js .mk__step { opacity: 0; transform: translateY(5px); }
+.js .cap-card.in .mk__step { animation: mkStepIn .32s ease both; }
+.js .cap-card.in .mk__step:nth-child(1) { animation-delay: .20s; }
+.js .cap-card.in .mk__step:nth-child(2) { animation-delay: .32s; }
+.js .cap-card.in .mk__step:nth-child(3) { animation-delay: .44s; }
+@keyframes mkStepIn {
+  from { opacity: 0; transform: translateY(5px); }
+  to   { opacity: 1; transform: none; }
+}
+
+.js .mk__fix-title,
+.js .mk__fix-meta { opacity: 0; }
+.js .cap-card.in .mk__fix-title { animation: mkFadeIn .3s ease both .05s; }
+.js .cap-card.in .mk__fix-meta  { animation: mkFadeIn .3s ease both .12s; }
+.js .mk__fix-action { opacity: 0; }
+.js .cap-card.in .mk__fix-action { animation: mkFadeIn .3s ease both .56s; }
+@keyframes mkFadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .js .mk__row, .js .mk__step,
+  .js .mk__fix-title, .js .mk__fix-meta, .js .mk__fix-action {
+    opacity: 1; transform: none; animation: none;
+  }
+  .nav__badge i { animation: none; }
+}
