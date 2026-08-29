@@ -7,7 +7,7 @@
 <meta name="description" content="Fixera uses AI to triage and resolve common IT tickets automatically, and routes the rest to the right technician — so your helpdesk queue stops growing." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Urbanist:wght@600;700;800&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="assets/styles.css?v=3" />
 <link rel="icon" type="image/png" href="assets/logo-mark.png?v=1">
 </head>
@@ -39,33 +39,9 @@
 <div class="nav__scrim" id="navScrim"></div>
 
 <section class="hero">
-  <div class="hero__mosaic" aria-hidden="true">
-    <span class="hm" style="top:8%;left:2%">F</span>
-    <span class="hm" style="top:22%;left:5%">X</span>
-    <span class="hm" style="top:38%;left:1%">{</span>
-    <span class="hm" style="top:55%;left:4%">0</span>
-    <span class="hm" style="top:70%;left:2%">→</span>
-    <span class="hm" style="top:85%;left:6%">1</span>
-    <span class="hm" style="top:12%;left:8%">·</span>
-    <span class="hm" style="top:48%;left:9%">}</span>
-    <span class="hm" style="top:6%;right:3%">A</span>
-    <span class="hm" style="top:20%;right:6%">I</span>
-    <span class="hm" style="top:35%;right:1%">→</span>
-    <span class="hm" style="top:52%;right:5%">T</span>
-    <span class="hm" style="top:68%;right:2%">#</span>
-    <span class="hm" style="top:82%;right:7%">K</span>
-    <span class="hm" style="top:15%;right:9%">·</span>
-    <span class="hm" style="top:42%;right:8%">0</span>
-    <span class="hm" style="top:92%;left:3%">·</span>
-    <span class="hm" style="top:30%;left:7%">R</span>
-    <span class="hm" style="top:76%;right:4%">·</span>
-    <span class="hm" style="top:60%;right:9%">S</span>
-  </div>
-  <div class="hero__glow" aria-hidden="true"></div>
-
   <div class="container hero__inner">
     <div class="hero__copy reveal">
-      <h1>Most tickets don't need <span class="text-accent">a human. Yet.</span></h1>
+      <h1>Most tickets don't need a human.</h1>
       <p class="hero__sub">Fixera reads incoming IT tickets with AI, resolves the common ones instantly, and routes the rest to the right technician with full context attached.</p>
       <div class="hero__actions">
         <a href="#demo" class="btn btn--sky btn--lg">Get started
@@ -75,19 +51,10 @@
       </div>
       <p class="hero__note">No credit card · Data-protection ready · Built for IT teams</p>
     </div>
-    <div class="reveal" data-d="2">
-      <div class="chat-window">
-        <div class="chat-window__head"><span>ticket_#8842</span><span>vpn access issue</span></div>
-        <div class="chat-msg chat-msg--user">
-          <div class="chat-msg__av">JD</div>
-          <div class="chat-msg__bubble">My VPN keeps disconnecting every few minutes on the new laptop.</div>
-        </div>
-        <div class="chat-msg chat-msg--ai">
-          <div class="chat-msg__av">FX</div>
-          <div class="chat-msg__bubble">Found it — your VPN client is on an outdated build. I've pushed the update and restarted the service. Try connecting again.</div>
-        </div>
-        <div class="chat-msg__status">✓ Resolved automatically — 42 seconds</div>
-      </div>
+    <div class="hero__kicker reveal" data-d="2">
+      <div class="hero__big-n"><span class="count" data-to="73">73</span><span class="hero__pct">%</span></div>
+      <p class="hero__big-lab">of IT tickets resolved automatically,<br>no technician needed</p>
+      <p class="hero__big-sub">Password resets · VPN drops · Access requests<br>handled in under 60 seconds</p>
     </div>
   </div>
 </section>
@@ -109,81 +76,26 @@
 
 <section class="section" id="capabilities">
   <div class="container">
-    <div class="section-head section-head--center reveal">
-      <span class="eyebrow">what_you_get</span>
-      <h2 class="h2">Three things every ticket runs through</h2>
+    <div class="section-head reveal">
+      <span class="eyebrow">how it works</span>
+      <h2 class="h2">Ticket in. Problem out.<br><span class="text-accent">Under 60 seconds.</span></h2>
     </div>
-    <div class="cap-grid">
-      <article class="card cap-card reveal" data-d="1">
-        <h3>It triages the queue</h3>
-        <p>Every incoming ticket classified and prioritized the moment it arrives — before a technician sees it.</p>
-        <div class="cap-card__mock">
-          <div class="mk">
-            <div class="mk__row"><span>Today's queue</span><span class="mk__badge">47 open</span></div>
-            <div class="mk__list">
-              <div class="mk__ticket">
-                <span class="mk__dot mk__dot--green"></span>
-                <span class="mk__subj">VPN keeps disconnecting</span>
-                <span class="mk__tag mk__tag--auto">Auto-fix</span>
-              </div>
-              <div class="mk__ticket">
-                <span class="mk__dot mk__dot--green"></span>
-                <span class="mk__subj">Password reset request</span>
-                <span class="mk__tag mk__tag--auto">Auto-fix</span>
-              </div>
-              <div class="mk__ticket">
-                <span class="mk__dot mk__dot--amber"></span>
-                <span class="mk__subj">Server migration error</span>
-                <span class="mk__tag mk__tag--route">Routed</span>
-              </div>
-              <div class="mk__ticket">
-                <span class="mk__dot mk__dot--dim"></span>
-                <span class="mk__subj">New laptop setup</span>
-                <span class="mk__tag mk__tag--wait">Waiting</span>
-              </div>
-            </div>
-            <div class="mk__foot"><b>31</b> auto-resolved today</div>
-          </div>
-        </div>
-      </article>
-
-      <article class="card cap-card reveal" data-d="2">
-        <h3>It resolves the common ones</h3>
-        <p>Password resets, VPN issues, access requests — handled instantly, no technician needed.</p>
-        <div class="cap-card__mock">
-          <div class="mk">
-            <div class="mk__row"><span>Ticket #8842</span><span>VPN issue</span></div>
-            <div class="mk__steps">
-              <div class="mk__step"><span class="mk__step-dot"></span>Checked client version</div>
-              <div class="mk__step"><span class="mk__step-dot"></span>Pushed update v4.2.1</div>
-              <div class="mk__step"><span class="mk__step-dot"></span>Restarted VPN service</div>
-            </div>
-            <div class="mk__verdict">
-              <svg viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              Resolved · 42 seconds
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <article class="card cap-card reveal" data-d="3">
-        <h3>It shows the whole picture</h3>
-        <p>SLA performance, queue depth, and resolution rates — live, not in a weekly spreadsheet.</p>
-        <div class="cap-card__mock">
-          <div class="mk">
-            <div class="mk__row"><span>SLA performance</span><span>Live</span></div>
-            <div class="mk__kpis">
-              <div class="mk__kpi"><span class="mk__kpi-val">12<small>min</small></span><span class="mk__kpi-lab">Response time</span></div>
-              <div class="mk__kpi"><span class="mk__kpi-val">94<small>%</small></span><span class="mk__kpi-lab">Resolution rate</span></div>
-              <div class="mk__kpi"><span class="mk__kpi-val">8</span><span class="mk__kpi-lab">Queue depth</span></div>
-            </div>
-            <div class="mk__bar-wrap">
-              <div class="mk__bar-track"><div class="mk__bar-fill"></div></div>
-              <span class="mk__bar-label">97% SLA compliance</span>
-            </div>
-          </div>
-        </div>
-      </article>
+    <div class="process-grid">
+      <div class="process-step reveal" data-d="1">
+        <span class="process-n">01</span>
+        <h3>Read</h3>
+        <p>Every ticket classified the moment it arrives — issue type, affected system, user history, and urgency — before a technician sees it.</p>
+      </div>
+      <div class="process-step reveal" data-d="2">
+        <span class="process-n">02</span>
+        <h3>Resolve or route</h3>
+        <p>Common issues handled automatically in seconds. Complex tickets escalated to the right person with full diagnostic context attached — no back-and-forth needed.</p>
+      </div>
+      <div class="process-step reveal" data-d="3">
+        <span class="process-n">03</span>
+        <h3>Learn</h3>
+        <p>Each resolved ticket improves the model. Fixera gets faster and more accurate at your specific environment — your runbooks, your systems, your patterns.</p>
+      </div>
     </div>
   </div>
 </section>

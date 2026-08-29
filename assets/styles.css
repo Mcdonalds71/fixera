@@ -1,4 +1,4 @@
-/* Fixera — AI IT helpdesk automation, dark navy + sky blue */
+﻿/* Fixera â€” AI IT helpdesk automation, dark navy + sky blue */
 :root {
   --ink-950: #0B1120;
   --ink-900: #111B2E;
@@ -17,7 +17,7 @@
   --radius: 14px;
   --radius-sm: 8px;
   --shadow: 0 24px 48px -16px rgba(0,0,0,.55);
-  --font-head: "Urbanist", sans-serif;
+  --font-head: "DM Serif Display", Georgia, serif;
   --font-body: "Inter", sans-serif;
   --font-mono: "IBM Plex Mono", monospace;
   --maxw: 1180px;
@@ -97,7 +97,7 @@ p{margin:0}
 @media(prefers-reduced-motion:reduce){.trust__track{animation:none;flex-wrap:wrap;width:auto;justify-content:center}}
 .trust__item{font-family:var(--font-mono);font-size:.82rem;color:var(--text-faint);border:1px solid var(--line-soft);border-radius:999px;padding:6px 16px;white-space:nowrap}
 
-/* Capabilities section — real UI mockup cards */
+/* Capabilities section â€” real UI mockup cards */
 .cap-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:48px}
 .cap-card{background:var(--ink-900);border:1px solid var(--line);border-radius:var(--radius);padding:28px;transition:border-color .2s}
 .cap-card:hover{border-color:rgba(56,189,248,.22)}
@@ -411,4 +411,26 @@ body:not(.js) .reveal{opacity:1;transform:none}
     opacity: 1; transform: none; animation: none;
   }
   .nav__badge i { animation: none; }
+}
+
+
+/* ---- Hero kicker (replaces chat window) ---- */
+.hero__kicker { display: flex; flex-direction: column; gap: 18px; padding: 44px; border: 1px solid var(--line); border-radius: var(--radius); background: rgba(255,255,255,.03); }
+.hero__big-n { display: flex; align-items: flex-start; gap: 4px; font-family: var(--font-head); font-size: clamp(4.5rem,10vw,7rem); font-weight: 400; color: var(--sky-400); line-height: 1; font-style: italic; }
+.hero__pct { font-size: clamp(2.2rem,5vw,3.8rem); margin-top: .5rem; }
+.hero__big-lab { font-size: .98rem; color: var(--text); line-height: 1.55; font-weight: 500; max-width: 300px; }
+.hero__big-sub { font-family: var(--font-mono); font-size: .76rem; color: var(--text-soft); line-height: 1.7; }
+
+/* ---- Process steps (replaces cap-cards) ---- */
+.process-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 0; margin-top: 56px; }
+.process-step { padding: 40px 36px; border-top: 2px solid var(--sky-400); }
+.process-step + .process-step { border-left: 1px solid var(--line); }
+.process-n { display: block; font-family: var(--font-mono); font-size: .7rem; color: var(--sky-400); letter-spacing: .1em; margin-bottom: 26px; text-transform: uppercase; }
+.process-step h3 { font-family: var(--font-head); font-size: 1.55rem; font-weight: 400; font-style: italic; margin-bottom: 14px; }
+.process-step p { font-size: .91rem; line-height: 1.68; color: var(--text-soft); }
+
+@media (max-width: 768px) {
+  .hero__kicker { padding: 28px; }
+  .process-grid { grid-template-columns: 1fr; }
+  .process-step + .process-step { border-left: none; border-top: 1px solid var(--line); }
 }
